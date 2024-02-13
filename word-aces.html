@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./word-aces.css">
+    <title>Word Wranglers</title>
+</head>
+<body>
+    <div class="main-page">
+        <header class="header">
+            <h1 class="brand">WORD ACES</h1>
+        </header>
+
+        <section class="info-bar">
+            <div class="loading">
+                <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 24 24"><path 
+                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm2.828 5.758 1.415-1.415a1 1 0 1 1 1.414 1.414l-1.415 1.415a1 1 0 0 1-1.414-1.414zM4 12a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H5a1 1 0 0 1-1-1zm5.172 4.242-1.415 1.415a1 1 0 0 1-1.414-1.414l1.415-1.415a1 1 0 0 1 1.414 1.414zm0-7.07a1 1 0 0 1-1.414 0L6.343 7.757a1 1 0 0 1 1.414-1.414l1.415 1.415a1 1 0 0 1 0 1.414zM13 19a1 1 0 0 1-2 0v-2a1 1 0 0 1 2 0zm0-12a1 1 0 0 1-2 0V5a1 1 0 0 1 2 0zm4.657 10.657a1 1 0 0 1-1.414 0l-1.415-1.415a1 1 0 0 1 1.414-1.414l1.415 1.415a1 1 0 0 1 0 1.414zM20 12a1 1 0 0 1-1 1h-2a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1z"/>
+            </svg>
+            </div>
+        </section>
+
+        <section class="game-container">
+            <div class="guess-board">
+                <div id="letter-0" class="guess-letter"></div>
+                <div id="letter-1" class="guess-letter"></div>
+                <div id="letter-2" class="guess-letter"></div>
+                <div id="letter-3" class="guess-letter"></div>
+                <div id="letter-4" class="guess-letter"></div>
+                <div id="letter-5" class="guess-letter"></div>
+                <div id="letter-6" class="guess-letter"></div>
+                <div id="letter-7" class="guess-letter"></div>
+                <div id="letter-8" class="guess-letter"></div>
+                <div id="letter-9" class="guess-letter"></div>
+                <div id="letter-10" class="guess-letter"></div>
+                <div id="letter-11" class="guess-letter"></div>
+                <div id="letter-12" class="guess-letter"></div>
+                <div id="letter-13" class="guess-letter"></div>
+                <div id="letter-14" class="guess-letter"></div>
+                <div id="letter-15" class="guess-letter"></div>
+                <div id="letter-16" class="guess-letter"></div>
+                <div id="letter-17" class="guess-letter"></div>
+                <div id="letter-18" class="guess-letter"></div>
+                <div id="letter-19" class="guess-letter"></div>
+                <div id="letter-20" class="guess-letter"></div>
+                <div id="letter-21" class="guess-letter"></div>
+                <div id="letter-22" class="guess-letter"></div>
+                <div id="letter-23" class="guess-letter"></div>
+                <div id="letter-24" class="guess-letter"></div>
+                <div id="letter-25" class="guess-letter"></div>
+                <div id="letter-26" class="guess-letter"></div>
+                <div id="letter-27" class="guess-letter"></div>
+                <div id="letter-28" class="guess-letter"></div>
+                <div id="letter-29" class="guess-letter"></div>
+            </div>
+
+            <section class="alerts">
+                <div class="winner-alert hidden">
+                    <div class="dismiss">
+                        <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 24 24"><path 
+                        d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm3.707,12.293a1,1,0,1,1-1.414,1.414L12,13.414,9.707,15.707a1,1,0,0,1-1.414-1.414L10.586,12,8.293,9.707A1,1,0,0,1,9.707,8.293L12,10.586l2.293-2.293a1,1,0,0,1,1.414,1.414L13.414,12Z"/></svg>
+                    </div>
+                    <div class="alert-message">
+                        <p class="alert-text"></p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="explainer-container">
+                <div class="explainer">
+                    <div class="symbol correct"></div>
+                    <p class="definition">CORRECT</p>
+                </div>
+
+                <div class="explainer">
+                    <div class="symbol close"></div>
+                    <p class="definition">CLOSE</p>
+                </div>
+
+                <div class="explainer">
+                    <div class="symbol wrong"></div>
+                    <p class="definition">WRONG</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./word-aces.js"></script>
+</body>
+</html>

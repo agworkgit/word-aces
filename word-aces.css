@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(48, 48, 48);
+    color: rgb(255, 245, 201);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-block: 30px;
+    border-bottom: 2px solid rgb(255, 245, 201);
+    font-size: 46px;
+}
+
+.loading svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    height: 48px;
+    width: 48px;
+    fill: rgb(255, 245, 201);
+    animation: spin 1.5s ease-in-out infinite;
+}
+
+.game-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 385px;
+}
+
+.guess-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    max-width: 295px;
+    width: 100%;
+    gap: 1rem;
+    margin: 30px auto;
+}
+
+/* 
+This will hide the element and 
+preserve the space it's taking 
+*/
+.hidden {
+    visibility: hidden;
+}
+
+.guess-letter {
+    width: 64px;
+    height: 64px;
+    background-color: rgb(255, 245, 201);
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(48, 48, 48);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrong {
+    background-color: rgb(197, 197, 197);
+}
+
+.close {
+    background-color: rgb(255, 193, 77);
+}
+
+.correct {
+    background-color: rgb(122, 255, 77);
+}
+
+.invalid {
+    animation: flash 1s;
+}
+
+.winner {
+    animation: winner 1.5s linear infinite;
+}
+
+/* Animations */
+/* Invalid */
+@keyframes flash {
+    25% {
+        background-color: rgb(255, 73, 110);
+    }
+
+    100% {
+        background-color: rgb(197, 197, 197);
+    }
+}
+
+/* Loading */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Winner */
+@keyframes winner {
+    25% {
+        color: rgb(122, 255, 77);
+    }
+
+    100% {
+        color: rgb(255, 245, 201);
+    } 
+}
+
+/* Game Explainer */
+.explainer-container {
+    border-top: 2px solid rgb(255, 245, 201);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 30px auto;
+}
+
+.explainer {
+    width: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.symbol {
+    margin-top: 50px;
+    width: 16px;
+    height: 16px;
+}
+
+.definition {
+    margin-block: 25px;
+    text-align: center;
+}
+
+.alerts {
+    display: flex;
+    justify-content: center;
+}
+
+.winner-alert {
+    width: 385px;
+    height: 125px;
+    background-color: rgba(77, 187, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.alert-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(48, 48, 48);
+    /* padding: 30px; */
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+}
+
+.dismiss svg {
+    height: 36px;
+    width: 36px;
+    fill: rgb(48, 48, 48);
+}
+
+.dismiss {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: max-content;
+    margin-left: 87%;
+    margin-top: 2%;
+    /* margin-right: 10px; */
+}
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .alert {
+        top: 17%;
+        left: 13.75%;
+    }
+}
