@@ -31,7 +31,7 @@ The following image shows the web application's appearance and functionality:
 
 MIT License
 
-Copyright (c) 2023 Alex Grigore, Adam Blampied, Matthew Lightfoot, Amaal Abdulle
+Copyright (c) 2023 Alex Grigore
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
